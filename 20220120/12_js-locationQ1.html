@@ -11,10 +11,9 @@
         // 만들어주세요. 
 
         var result = confirm("현재 페이지를 보시겠습니까?");
-       if (result){
-           document.write("<h1> 네이버 대신 여기로 왔습니다.</h1>")
-       } else
+       if (!result){
             document.write( location.href = "https://www.naver.com");
+       }
     </script>
 
     <meta charset="UTF-8">
@@ -23,6 +22,6 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1> 네이버 대신 여기로 왔습니다.</h1>
 </body>
 </html>
